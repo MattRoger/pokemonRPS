@@ -1,0 +1,13 @@
+body{
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pokeBar img{
+    width: 200px;
+}
+.pokeBar{
+    display: inline;
+        
+}
