@@ -4,21 +4,21 @@ let lives = 3;
 let wins = 0;
 
 
-$(".rulesDiv").on("click", "button", function () {
-    console.log("rules btn clicked")
-    $(".rulesDiv").empty("")
-    const pokeBar = $("<div>").addClass("pokeBar")
-    const pokemonImgs = ["assets/images/charmander.png", "assets/images/bulbasaur.png", "assets/images/squirtle.png"]
-    const type = ["fire", "grass", "water"]
-    for (i = 0; i < pokemonImgs.length; i++) {
-        const pokeImg = $("<img>").attr("src", pokemonImgs[i])
-        pokeImg.attr("type-value", type[i])
-        pokeBar.append(pokeImg)
-    }
-    $(".gameDiv").append(pokeBar)  
-    $("#score").text(wins)
-    $("#lives").text(lives)
-    })
+// $(".rulesDiv").on("click", "button", function () {
+//     console.log("rules btn clicked")
+//     $(".rulesDiv").empty("")
+//     const pokeBar = $("<div>").addClass("pokeBar")
+//     const pokemonImgs = ["assets/images/charmander.png", "assets/images/bulbasaur.png", "assets/images/squirtle.png"]
+//     const type = ["fire", "grass", "water"]
+//     for (i = 0; i < pokemonImgs.length; i++) {
+//         const pokeImg = $("<img>").attr("src", pokemonImgs[i])
+//         pokeImg.attr("type-value", type[i])
+//         pokeBar.append(pokeImg)
+//     }
+//     $(".gameDiv").append(pokeBar)  
+//     $("#score").text(wins)
+//     $("#lives").text(lives)
+//     })
     
 
 
@@ -55,11 +55,23 @@ $(".gameDiv").on("click", "img", function () {
     }
     if (lives === 0) {
         console.log("you lose")
+        endGame()
     }
 
 })
 
-function computerPick() {
+$("#endGame").on("click", "button", function () {
+    lives=3;
+    wins=0
+    $("#score").text(wins)
+    $("#lives").text(lives)
+    $(".endGame").empty()
+})
 
-    // console.log(computerGuess)
+function endGame(){
+    const endGameWindow =$("<div>").addClass("endGameWindow");
+    const score= $("<p>").text(wins);
+    const playAgainBtn=$("<button>").text("Play Again?")
+    endGameWindow.append(score, playAgainBtn)
+    $(".endGame").append(endGameWindow)
 }
