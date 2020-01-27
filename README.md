@@ -1,6 +1,6 @@
 # Pokemon FGW :fire: :leaves: :ocean:
 A Rock Paper Scissors JavaScript Game with a pokemon theme
-[Play The Game!](https://mattroger.github.io/pokemonRPS/)
+/n [Play The Game!](https://mattroger.github.io/pokemonRPS/)
 
 
 ## Motivation
