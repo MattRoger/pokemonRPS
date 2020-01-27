@@ -1,4 +1,4 @@
-# pokemon FGW :fire: :leaves: :ocean:
+# Pokemon FGW :fire: :leaves: :ocean:
 A Rock Paper Scissors JavaScript Game with a pokemon theme
 
 
@@ -10,14 +10,21 @@ MVP. All of the game functions work. Only sized for larger screens
 
 ### ToDos
 
-- [ ]
+- [ ] Fix tracking score, right now it seems to only be counting computer
+- [ ] add note about ties in rules
+- [ ] Make page responsive
+- [ ] loop battle music
+- [ ] have opening music play at end instead of battle music
 
 ## Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex
+HTML CSS JavaSript
 
 ## Tech/framework used
+HTML CSS JavaSript JQuerry
 
 ## Features
+* Music
+* Stats!
 
 ## Installation
 * :trident: Fork it
@@ -40,4 +47,4 @@ If you're using any code style like xo, standard etc. That will help others whil
 
 ## License
     
-    
+    &copy Matt Roger
