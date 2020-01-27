@@ -1,5 +1,5 @@
-#  **Pokemon FGW** :fire: :leaves: :ocean:
-A Rock Paper Scissors JavaScript Game with a pokemon theme
+#  **Pokemon FGW** :fire: :leaves: :ocean:.
+Pokemon FGW is a take on Rock, Paper, Scissors JavaScript Game with a pokemon theme. Fire beats Grass beats Water.
 
 [Play The Game!](https://mattroger.github.io/pokemonRPS/)
 
