@@ -1,150 +1,320 @@
-body{
+body {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     font-family: 'Press Start 2P', cursive;
 }
-
-/* Rules styles */
-.rulesWrapper{
-    position: relative;
+/* start */
+#start{
+    background-color: initial;
+    border: none;
+    background-image: url("../images/pokeball.png");
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    color:#fa7b30;
+    font-size: 1.5em;
+    line-height:1.5em;
+    margin-top: 15vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:550px;
+    height: 550px;
+    cursor: pointer;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
 }
-.rulesDiv{
-    background-color:#7aa85c90;
-    margin: 0;
-    height: 100vh;
+/* Rules styles */
+
+.rulesWrapper {
+    position: relative;
     
 }
 
-.rocketIntro{
-    display: flex;
-    flex-wrap: wrap; 
-    position: relative;
-}
-.teamRocketImg{   
-    width:350px;
-    margin:1em;   
-}
-.rocketIntroLines{
-    font-size: 1.15em;
-    padding:1em;
-    margin-left:2em;
-    margin-top: 1em;
-    background: rgb(229, 233, 218);
-    border:4px double black;
-}
-.nextDiv{
-    position: absolute;
-    font-size:1.25em;
-    bottom:2em;
-    right:2em;
-    display: flex;
-    flex-direction: row-reverse;
-}
-.nextDiv img{
-    width:125px;
+.rulesDiv {
+    margin: 0;
+    height: 100vh;
 }
 
-.rulesWrapper{
+.rocketIntro {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.teamRocketImg {
+    width: 350px;
+    margin: 1em;
+}
+
+.rocketIntroLines {
+    font-size: 1.15em;
+    padding: 1em;
+    margin-left: 2em;
+    margin-top: 1em;
+    background: rgb(229, 233, 218);
+    border: 4px double black;
+}
+
+.nextDiv {    
+    font-size: 1.25em;   
+    display: flex;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    border: 2px double black;
+}
+
+.nextDiv img {
+    width: 125px;
+}
+
+.rulesWrapper {
     position: relative;
     width: 85%;
     text-align: center;
     font-size: 1em;
     margin: auto;
     background: rgb(229, 233, 218);
-    border:4px double black;
-    padding-top:1em;
+    border: 4px double black;
+    padding-top: 1em;
     display: grid;
-    grid-template-columns: 60%,40%;
-    grid-template-rows: 1fr,1fr,1fr;
-    
+    grid-template-columns: 60%, 40%;
+    grid-template-rows: 1fr, 1fr, 1fr;
 }
-.rulesWrapper h1{
+
+.rulesWrapper h1 {
     grid-column-start: 1;
-    grid-column-end: 3;    
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.rulesText{
+
+.rulesText {
     width: 90%;
     margin: auto;
-    font-size:1.35em;
+    font-size: 1.35em;
     line-height: 1.75em;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.rulesWrapper span{
+
+.rulesWrapper span {
     display: block;
     font-size: 1.5em;
     text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
 }
-.fire{
+
+.fire {
     color: #fa7b30;
 }
-.grass{
-    color:#7aa85c;
+
+.grass {
+    color: #7aa85c;
 }
-.water{
-    color:#96d4d0;
+
+.water {
+    color: #96d4d0;
 }
-.guideImg{
+
+.guideImg {
     display: block;
-    width:85%;
-    margin:auto;
+    width: 85%;
+    margin: auto;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.rulesBtn{
-background: url("../images/startBtn.png");
-background-size: cover;
-background-color: #f3dc80;
-font-size:.9em;
-font-family: 'Press Start 2P', cursive;
-border:black 4px solid;
-padding: 4.25em 9.5em;
-margin: 0 auto 1em auto;
-grid-column-start: 1;
-grid-column-end: 3;    
-grid-row-start: 3;
-grid-row-end: 4;
-border-radius: 50px 50px 50px 50px;
--moz-border-radius: 50px 50px 50px 50px;
--webkit-border-radius: 50px 50px 50px 50px;
+
+.rulesBtn {
+    background: url("../images/startBtn.png");
+    background-size: cover;
+    background-color: #f3dc80;
+    color:white;
+    font-size: .9em;
+    font-family: 'Press Start 2P', cursive;
+    border: black 4px solid;
+    padding: 4.25em 9.5em;
+    margin: 0 auto 1em auto;
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+}
+.rulesBtn:hover{
+    background-color: #fa7b30;
 }
 
 /* Game Styles */
-.gameDiv{
+
+.gameDiv {
+    display: none;
     position: relative;
     height: 100vh;
 }
-.pokeBar img{
-    width: 200px;
+.statsDiv{
+    background-color: #f3dc80;
+    bottom: 4px double black;
+    font-size:2em;
+    padding:1em;
+    width: 30%;
+    border:4px double black;
+    border-radius: 11px;
+    position: absolute;
+    margin-top: 2em;
+    margin-left: 2em;
 }
-.pokeBar{
+
+.pokeBar img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.pokeBar {
     display: inline;
     position: absolute;
-    bottom:2em;
-    left:3em;        
+    bottom: 2em;
+    left: 8em;
 }
-.resultsDiv{
+
+.resultsDiv {
     display: none;
-    background-image: url("../images/results.png");  
+    background-image: url("../images/results.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 90vh;
     width: 400px;
-    border:20px solid black;
+    border: 20px solid black;
     background-color: #f3dc8059;
     position: absolute;
-    right:2em;
-    top:1em;
+    right: 2em;
+    top: 1em;
 }
-.resultsDiv img{
-    width:100px;
+
+.resultsDiv img {
+    width: 100px;
+}
+
+.teamRocketResults h2, .playerResults h2 {
+    animation-duration: 600ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    from {
+        color: #DD3434;
+    }
+    to {
+        color: White;
+    }
+}
+
+.teamRocketResults, .playerResults {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.teamRocketResults {
+    top: 2em;
+}
+
+.playerResults {
+    bottom: 2em;
+}
+
+.playerWinner, .rocketWinner {
+    display: none;
+}
+
+.endGameWindow {
+    background-image: url("../images/endbackground.png");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.endGameWindow h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+.playerStats, .compStats {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.playerStats {
+    margin-left: 35%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 40%;
+}
+
+.compStats {
+    margin-right: 35%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.endGameWindow img {
+    margin-left: 15%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 6px solid #000000;
+    border-radius: 11px;
+    -webkit-box-shadow: 10px 9px 14px 3px rgba(0, 0, 0, 0.77);
+    box-shadow: 10px 9px 14px 3px rgba(0, 0, 0, 0.77);
+}
+
+.message {
+    margin-right: 25%;
+    width: 30%;
+    font-size: 2em;
+    line-height: 2em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+}
+
+.endGameWindow button {
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    width: 33%;
+    background: url("../images/startBtn.png");
+    background-size: cover;
+    background-color: #f3dc80;
+    font-size: .9em;
+    font-family: 'Press Start 2P', cursive;
+    border: black 4px solid;
+    padding: 4.25em 9.5em;
+    margin: 0 auto 1em auto;
 }

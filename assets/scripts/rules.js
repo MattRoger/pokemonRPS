@@ -30,7 +30,7 @@ function rules(){
     aboutDiv.append(aboutP,aboutP2,aboutP3)
     const rulesWrapper =$("<div>").addClass("rulesWrapper")
     const img=$("<img>").attr("src","assets/images/guide.png").addClass("guideImg")
-    const rulesButton =$("<button>").addClass("rulesBtn").text(`I Am Ready To Be The Very Best`)
+    const rulesButton =$("<button>").addClass("rulesBtn").text(` I Am Ready To Be The Very Best `)
     rulesWrapper.append(welcome, aboutDiv, img, rulesButton);
     $(".rulesDiv").append(rulesWrapper)        
 }
@@ -62,6 +62,7 @@ function teamRocketIntro(){
     const img2=$("<img>").attr("src","assets/images/squirtleBoss.png")
     const text=$("<p>").text("Challenge Accepted!")
     nextDiv.append(img2,text)
-    teamRocketDiv.append(img,lines, nextDiv)
+    lines.append(nextDiv)
+    teamRocketDiv.append(img,lines)
     $(".rulesDiv").append(teamRocketDiv)
 }
