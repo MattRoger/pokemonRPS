@@ -1,5 +1,6 @@
 # Pokemon FGW :fire: :leaves: :ocean:
 A Rock Paper Scissors JavaScript Game with a pokemon theme
+[Play The Game!](https://mattroger.github.io/pokemonRPS/)
 
 
 ## Motivation
@@ -11,6 +12,7 @@ MVP. All of the game functions work. Only sized for larger screens
 ### ToDos
 
 - [ ] Fix tracking score, right now it seems to only be counting computer
+- [ ] Fix issue with startBtn. Maybe issue with B
 - [ ] add note about ties in rules
 - [ ] Make page responsive
 - [ ] loop battle music
