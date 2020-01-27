@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,38 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="rulesDiv"></div>
-    <div class="gameDiv"></div>
-    <div class="statsDiv">
-        <div id="score"></div>
-        <div id="lives"></div>
+    <div class="rulesDiv">
+        <button id="start">Start</button>
+    </div>
+    <div class="gameDiv">
+        <div class="resultsDiv">
+            <div class="teamRocketResults"></div>
+            <div class="playerResults"></div>
+        </div>
+        <div class="statsDiv">
+            <div id="score"></div>
+            <div id="lives"></div>
+        </div>
     </div>
     <div class="endGame"></div>
 
+    <audio id="rocketMusic">
+        <source src="assets/sound/team_rocket.mp3">
 
+    </audio>
+    <audio id="openMusic">
+        <source src="assets/sound/pokemon_opening.mp3">
+
+    </audio>
+    <audio id="battleMusic">
+        <source src="assets/sound/pokemon_battle.mp3" type="audio/mp3">
+    </audio>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="assets/scripts/game.js"></script>
     <script src="assets/scripts/rules.js"></script>
 </body>
+
 </html>

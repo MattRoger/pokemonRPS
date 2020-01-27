@@ -1,16 +1,23 @@
 
-$(document).ready(function () {
+$("#start").on("click", function(){
+    $("#start").css("display","none")
+    $('audio#openMusic')[0].play()  
     teamRocketIntro();
     $(".nextDiv").on("click", function (){
         rules()
     })
+
 })
+
+
 
 
 
 
 function rules(){
     $(".rocketIntro").empty()
+    $('audio#rocketMusic')[0].pause() 
+    $('audio#openMusic')[0].play()  
     const welcome= $("<h1>").text(`Welcome to Pokemon FGW Battles!!!`)
     const aboutDiv=$("<div>").addClass("rulesText")
     const aboutP=$("<p>").text(`Pokemon FGW Battles is a take on Rock, Paper Scissors. `)
@@ -29,6 +36,8 @@ function rules(){
 }
 
 function teamRocketIntro(){  
+    $('audio#openMusic')[0].pause()  
+    $('audio#rocketMusic')[0].play() 
     console.log(" rocket intro working") 
     const img=$("<img>").attr("src","assets/images/teamRocket.png").addClass("teamRocketImg")
     const introLines=["Prepare for Trouble!",

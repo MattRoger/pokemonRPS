@@ -1,32 +1,54 @@
 const computerChoices = ["fire", "grass", "water"]
 let computerGuess = "";
+
 let lives = 3;
 let wins = 0;
 
 
-// $(".rulesDiv").on("click", "button", function () {
-//     console.log("rules btn clicked")
-//     $(".rulesDiv").empty("")
-//     const pokeBar = $("<div>").addClass("pokeBar")
-//     const pokemonImgs = ["assets/images/charmander.png", "assets/images/bulbasaur.png", "assets/images/squirtle.png"]
-//     const type = ["fire", "grass", "water"]
-//     for (i = 0; i < pokemonImgs.length; i++) {
-//         const pokeImg = $("<img>").attr("src", pokemonImgs[i])
-//         pokeImg.attr("type-value", type[i])
-//         pokeBar.append(pokeImg)
-//     }
-//     $(".gameDiv").append(pokeBar)  
-//     $("#score").text(wins)
-//     $("#lives").text(lives)
-//     })
+$(".rulesDiv").on("click", ".rulesBtn", function () {
+    console.log("rules btn clicked")
+    $(".rulesDiv").empty("").css("display","none")
+    $('audio#openMusic')[0].pause()
+    $('audio#battleMusic')[0].play()  
+    const pokeBar = $("<div>").addClass("pokeBar")
+    const pokemonImgs = ["assets/images/charmander.png", "assets/images/bulbasaur.png", "assets/images/squirtle.png"]
+    const type = ["fire", "grass", "water"]
+    const playerResultsBar=$("<div>").addClass("resultsPokeImg")
+    const teamRocketResultsBar=$("<div>").addClass("resultsPokeImg")
+    for (i = 0; i < pokemonImgs.length; i++) {
+        const pokeImg = $("<img>").attr("src", pokemonImgs[i])
+        const pokeResultsImgP = $("<img>").attr("src", pokemonImgs[i])
+        const pokeResultsImgR = $("<img>").attr("src", pokemonImgs[i])
+        pokeImg.attr("type-value", type[i]).css("width","200px")
+        pokeBar.append(pokeImg)
+
+        pokeResultsImgP.addClass(type[i]+`ImgP`).css("display","none") 
+        playerResultsBar.append(pokeResultsImgP) 
+
+        pokeResultsImgR.addClass(type[i]+`ImgR`).css("display","none") 
+        teamRocketResultsBar.append(pokeResultsImgR) 
+    }
+    $(".gameDiv").append(pokeBar)  
+    $("#score").text(wins)
+    $("#lives").text(lives)
+    $(".resultsDiv").css("display", "inline")  
+    $(".teamRocketResults").append(teamRocketResultsBar)
+    $(".playerResults").append(playerResultsBar)
+
+    })
     
 
 
 $(".gameDiv").on("click", "img", function () {
+    hideResults()
     let userGuess = ($(this).attr("type-value"))
     console.log(userGuess + " pokemon clicked")
     let computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     console.log(computerGuess + "computer guess")
+    const playerImgClass=`${userGuess}ImgP`;    
+    const computerImgClass=`${computerGuess}ImgR`;
+    $(`.${playerImgClass}`).css("display","inline")    
+    $(`.${computerImgClass}`).css("display","inline")    
     if ((userGuess === "fire" && computerGuess === "grass") ||
         (userGuess === "grass" && computerGuess === "water") ||
         (userGuess === "water" && computerGuess === "fire")) {
@@ -68,6 +90,16 @@ $("#endGame").on("click", "button", function () {
     $(".endGame").empty()
 })
 
+
+function hideResults(){
+    $(".fireImgP").hide()
+    $(".grassImgP").hide()
+    $(".waterImgP").hide()
+    $(".fireImgR").hide()
+    $(".grassImgR").hide()
+    $(".waterImgR").hide()
+}
+
 function endGame(){
     const endGameWindow =$("<div>").addClass("endGameWindow");
     const score= $("<p>").text(wins);
@@ -75,3 +107,5 @@ function endGame(){
     endGameWindow.append(score, playAgainBtn)
     $(".endGame").append(endGameWindow)
 }
+
+

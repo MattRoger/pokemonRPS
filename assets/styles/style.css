@@ -118,11 +118,33 @@ border-radius: 50px 50px 50px 50px;
 }
 
 /* Game Styles */
-
+.gameDiv{
+    position: relative;
+    height: 100vh;
+}
 .pokeBar img{
     width: 200px;
 }
 .pokeBar{
     display: inline;
-        
+    position: absolute;
+    bottom:2em;
+    left:3em;        
+}
+.resultsDiv{
+    display: none;
+    background-image: url("../images/results.png");  
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    width: 400px;
+    border:20px solid black;
+    background-color: #f3dc8059;
+    position: absolute;
+    right:2em;
+    top:1em;
+}
+.resultsDiv img{
+    width:100px;
 }
