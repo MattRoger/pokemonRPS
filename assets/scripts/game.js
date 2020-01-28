@@ -87,18 +87,19 @@ $(".gameDiv").on("click", "img", function () {
         console.log("you lose")
         endGame()
     }
-    if(userGuess="fire"){
+
+    if(userGuess==="fire"){
         playerFire++
-    }else if(userGuess="grass")
+    }else if(userGuess==="grass")
     {
         playerGrass++
     }else{
         playerWater++
     }
 
-    if(computerGuess="fire"){
+    if(computerGuess==="fire"){
         compFire++
-    }else if(computerGuess="grass")
+    }else if(computerGuess==="grass")
     {
         compGrass++
     }else{
