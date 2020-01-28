@@ -1,19 +1,53 @@
-# pokemonRPS
-A Rock Paper Scissors JavaScript Game with a pokemon theme
+#  **Pokemon FGW** :fire: :leaves: :ocean:.
+Pokemon FGW is a take on Rock, Paper, Scissors JavaScript Game with a pokemon theme. Fire beats Grass beats Water.
+
+[Play The Game!](https://mattroger.github.io/pokemonRPS/)
 
 
-##psuedo code
-* on load, rules screen ok button
-* load battle screen
-  * music
-  * pokemon
-  * stats bar
-* battle code
-  * onclick of pokemon chooses that pokemon for uses
-   * computer chooses pokemon
-    If computer choose same pokemon, runs a 50/50 to choose another pokemon
-    if user wins ++score
-    else --lives
+## Motivation
+I wanted to build an app that shows off my JQuerry and DOM skills.
+
+## Build Status
+MVP. All of the game functions work. Only sized for larger screens 
+
+### ToDos
+
+- [ ] Fix tracking score, right now it seems to only be counting computer
+- [ ] Fix issue with startBtn. Maybe issue with B
+- [ ] add note about ties in rules
+- [ ] Make page responsive
+- [ ] loop battle music
+- [ ] have opening music play at end instead of battle music
+
+## Code style
+HTML CSS JavaSript
+
+## Tech/framework used
+HTML CSS JavaSript JQuerry
+
+## Features
+* Music
+* Stats!
+
+## Installation
+* :trident: Fork it
+* :sheep: Clone it
+
+
+## API Reference
+
+## Tests
+
+## How to use?
+
+
+## Credits / Contact information
+* @MattRoger 
+  * :man_office_worker: https://mattroger.github.io/
+  * :e-mail: mattroger.webdev@gmail.com
+  * :man_office_worker: www.linkedin.com/in/matt-roger/
+
+
+## License
     
-    
-    
+    &copy Matt Roger
