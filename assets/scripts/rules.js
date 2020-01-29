@@ -25,7 +25,7 @@ function rules(){
     const g =$("<span>").text(`Grass Type, `).addClass("grass")
     const w =$("<span>").text(`Water Type. `).addClass("water")
     const aboutP2=$("<p>").append(f,g,w)
-    const aboutP3=$("<p>").text(`Fire Beats Grass, Grass Beats Water, Water Beats Fire. Each turn the player choose their pokemon! Careful you only have three lives.`)
+    const aboutP3=$("<p>").text(`Fire Beats Grass, Grass Beats Water, Water Beats Fire. Each turn the player choose their pokemon! If two pokemon of the same class face of, each pokemon has a 50% chance to win! Careful you only have three lives.`)
 
     aboutDiv.append(aboutP,aboutP2,aboutP3)
     const rulesWrapper =$("<div>").addClass("rulesWrapper")

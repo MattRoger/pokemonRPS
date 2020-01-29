@@ -109,14 +109,14 @@ $(".gameDiv").on("click", "img", function () {
 })
 
 $("#endGame").on("click", "button", function () {
-    lives = 3;
-    wins = 0;
-    playerFire=0
-    playerWater=0
-    playerGrass=0
-    compFire=0
-    compWater=0
-    compGrass=0
+    lives=== 3;
+    wins === 0;
+    playerFire===0
+    playerWater===0
+    playerGrass===0
+    compFire===0
+    compWater===0
+    compGrass===0
     $("#score").text(wins)
     $("#lives").text(lives)
     $(".endGame").empty()
@@ -130,7 +130,7 @@ function endGame() {
 
     
     const playerStatsDiv=$("<div>").addClass("playerStats")
-    const playerHead=$("<h2>").text("Player")
+    const playerHead=$("<h2>").text("Poke Champ")
     const playerFireStats=$("<p>").text(`Charmander x ${playerFire}`)    
     const playerGrassStats=$("<p>").text(`Bulbasaur x ${playerGrass}`)
     const playerWaterStats=$("<p>").text(`Squirtle x ${playerWater}`)

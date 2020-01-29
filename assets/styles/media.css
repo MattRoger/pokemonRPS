@@ -1,0 +1,357 @@
+@media only screen and (max-width: 1025px) {
+   
+    .rulesWrapper {
+        position: relative;
+        width: 95%;
+        text-align: center;
+        font-size: 1em;       
+        overflow: auto;
+        padding-top: .25em;        
+    }
+    .rocketIntro {
+        margin-top: 10vh;
+    }
+    .teamRocketImg {
+        width: 350px;
+        margin: 1em;
+    }
+    .rocketIntroLines {
+        font-size: 1em;
+        padding: .75em;
+        line-height: 1.5em;
+        width: 50%;
+    }
+    .resultsDiv {
+        background-image: url("../images/resultsMobile.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        width: 100vw;
+        margin: 0;
+        box-sizing: border-box;
+        position: absolute;
+        right: initial;
+        top: 25vh;
+    }
+    .resultsDiv img {
+        width: 150px;
+    }
+    .teamRocketResults, .playerResults {
+        position: absolute;
+        margin: auto;
+        text-align: initial;
+        width: auto;
+        font-size: 1.5em;
+        display: block;
+    }
+    .teamRocketResults h2, .playerResults h2 {
+        text-align: center;
+    }
+    .teamRocketResults {
+        position: absolute;
+        left: initial;
+        right: 5em;
+        bottom: 2em;
+    }
+    .playerResults {
+        position: absolute;
+        left: initial;
+        left: 5em;
+        bottom: initial;
+        bottom: 2em;
+    }
+    .playerWinner, .rocketWinner {
+        display: none;
+        top: 2em;
+    }
+    .pokeBar img {
+        cursor: pointer;
+        width: 100%;
+    }
+    .pokeBar {
+        position: absolute;
+        bottom: 2em;
+        left: 25%;
+        right: 25%;
+        width: 100%;
+    }
+    .endGameWindow {
+        background-image: url("../images/endbackgroundM.png");
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        height: 100vh;
+    }
+    .playerStats, .compStats {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        color: white;
+    }
+    .playerStats {
+        margin-left: 35%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 45%;
+    }
+    .compStats {
+        margin-right: 35%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .endGameWindow img {
+        margin: 0 auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .message {
+        margin: 0 auto;
+        width: 60%;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .endGameWindow button {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        width: 86%;
+        background: url("../images/startbtn.png");
+        background-size: cover;
+        background-color: #f3dc80;
+        font-size: 1.5em;
+        font-family: 'Press Start 2P', cursive;
+        border: black 4px solid;
+        padding: 4.25em 9.5em;
+        margin: 0 auto 1em auto;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .teamRocketImg {
+        width: 120px;
+        height: 234px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        margin: 0;
+    }
+    .rocketIntro {
+        margin-top: 0;
+    }
+    .rocketIntroLines {
+        font-size: .75em;
+        padding: .5em;
+        line-height: 1.25em;
+        position: absolute;
+        top: 250px;
+        right: .5%;
+        left: .5%;
+        width: 99%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .nextDiv {
+        position: absolute;
+        top: -244px;
+        right: 10px;
+        font-size: .75em;
+        padding: 1em;
+        box-sizing: border-box;
+        display: block;
+        text-align: center;
+        background: rgb(229, 233, 218);
+        border: 4px double black;
+    }
+    .nextDiv img {
+        display: block;
+        width: 120px;
+        margin: auto;
+        padding-top: 10px;
+    }
+    .rulesWrapper h1 {
+        font-size: .8em;
+        line-height: 1.25em;
+    }
+    .rulesText {
+        width: 90%;
+        margin: auto;
+        font-size: .9em;
+        line-height: 1em;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .rulesWrapper span {
+        font-size: .95em;
+        padding: 1em;
+    }
+    .guideImg {
+        display: block;
+        width: 75%;
+        margin: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .rulesBtn {
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: .75em;
+        padding: 2.25em 2.5em;
+        width: 90%;
+        margin: 0 auto 1em auto;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .statsDiv {
+        width: 50%;
+        font-size: 1.25em;
+        padding: 1em;
+        border: 4px double black;
+        border-radius: 11px;
+        position: absolute;
+        margin: auto;
+    }
+    .resultsDiv {
+        background-image: url("../images/resultsPhone.png");
+        height: 700px;
+        width: 100vw;
+        border: 10px solid black;
+        box-sizing: border-box;
+        top: 15vh;
+    }
+    .resultsDiv img {
+        width: 75px;
+        display: block;
+        margin: auto;
+    }
+    .teamRocketResults, .playerResults {
+        font-size: .9em;
+        width: 100%;
+        text-align: center;
+    }
+   
+    .teamRocketResults {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 2em;       
+        
+    }
+    .playerResults {
+        position: absolute;
+        left: initial;      
+        bottom: 160px;
+    }
+    .playerWinner, .rocketWinner {
+        display: none;
+        top: 2em;
+    }
+    .pokeBar img {   
+        display:block;   
+        max-width: 100px;   
+    }
+    .pokeBar {        
+        display: flex;        
+        bottom: 2em;
+        left: 10%;
+        right: 10%;
+    }
+    .endGameWindow {
+        font-size: .7em;
+        background-image: url("../images/endbackgroundP.png");
+        background-size: contain;      
+    }
+   
+    .playerStats {
+        margin-left: 35%;       
+        width: 50%;
+        color: #000;
+    }
+    .compStats {
+        width: 50%;
+        margin-right: 35%;
+        color: #000;
+       
+    }
+    .endGameWindow img {
+       width: 290px;
+    }
+    .message {     
+        width: 90%;      
+    }
+    .endGameWindow button {       
+        width: 95%;      
+        font-size: 1.5em;
+        color:white;       
+    }
+}
+@media only screen and (max-width: 325px){
+    .playerResults {            
+        bottom: 260px;
+    }
+}
+@media only screen and (max-width: 325px) {
+    #start {
+        background-image: url("../images/pokeball.png");
+        font-size: 1em;
+        line-height: 1.25em;
+        margin-top: 30vh;
+        width: 300px;
+        height: 300px;
+    }
+    .rulesWrapper {
+        height: 100vh;
+        overflow: hidden;
+    }   
+    .teamRocketImg {
+        width: 75px;
+        height: 146px;          
+    }
+    .rocketIntroLines {
+        font-size: .69em;    
+        top: 156px;            
+    }
+    .nextDiv {       
+        top: -156px;      
+        font-size: .75em;
+        padding: 1em;
+        box-sizing: border-box;       
+    }
+    .nextDiv img {    
+        width: 75px;
+        margin: auto;
+        padding-top: 10px;
+    }
+    
+    .rulesText {       
+        font-size: .7em;         
+    }
+    .rulesWrapper span {
+        font-size: .85em;
+    }  
+    .statsDiv {
+        width: 50%;
+        font-size: .9em;
+        padding: .9em;        
+    }
+    .resultsDiv {
+        height: 500px;
+        width: 100vw;   
+        top: 15vh;
+    }
+    
+    .pokeBar img {   
+        max-width: 85px;   
+    }    
+    
+    .endGameWindow {
+        font-size: .5em;         
+    }
+}
