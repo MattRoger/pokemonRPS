@@ -36,6 +36,7 @@ MVP. All of the game functions work. Only sized for larger screens.
 * CSS 
 * JavaSript 
 * JQuerry
+* Adobe Photoshop
 
 ## Features
 * Music
@@ -67,7 +68,8 @@ A Demo of how the game works.
 
 ### End of Game
 At the End of game, the game stats are displayed to the player. The player is given a different message depending on how well they do.
-The Player can choose to play again or close the window.
+The Player can choose to play again or close the window. I used Photoshop to create the custom background.
+
 
 ![results](https://github.com/MattRoger/screenshots/blob/master/pokemon/end.png?raw=true)
 
@@ -81,8 +83,3 @@ The Player can choose to play again or close the window.
   * :man_office_worker: https://mattroger.github.io/
   * :e-mail: mattroger.webdev@gmail.com
   * :man_office_worker: www.linkedin.com/in/matt-roger/
-
-
-## License
-    
-    &copy Matt Roger
