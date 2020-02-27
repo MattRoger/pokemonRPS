@@ -14,17 +14,19 @@ Bulbasaur, green = Grass :leaves:
 
 Squirtle, blue = Water :ocean:
 
+You only have three lives! :heart: :heart: :heart:
+
 ## Motivation
 I wanted to build an app that shows off my JQuerry and DOM skills.
 
 ## Build Status
-MVP. All of the game functions work. Only sized for larger screens 
+MVP. All of the game functions work. Only sized for larger screens
 
 ### ToDos
 
 - [ ] Fix tracking score, right now it seems to only be counting computer
 - [ ] Fix issue with startBtn. Maybe issue with B
-- [ ] add note about ties in rules
+- [ x ] add note about ties in rules
 - [ ] Make page responsive
 - [ ] loop battle music
 - [ ] have opening music play at end instead of battle music
