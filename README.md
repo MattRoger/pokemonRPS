@@ -65,6 +65,12 @@ During the game, if users have their speakers on, the can listen to Pokemon's cl
 A Demo of how the game works.
 ![demo](https://github.com/MattRoger/screenshots/blob/master/pokemon/PokemonFGWGameplay.gif?raw=true)
 
+### End of Game
+At the End of game, the game stats are displayed to the player. The player is given a different message depending on how well they do.
+The Player can choose to play again or close the window.
+
+![results](https://github.com/MattRoger/screenshots/blob/master/pokemon/end.png?raw=true)
+
 ## Installation
 * :trident: Fork it
 * :sheep: Clone it
