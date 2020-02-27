@@ -48,9 +48,15 @@ This page informs the user there is sound, so they can adjust their speakers acc
 
 ![opening](https://github.com/MattRoger/screenshots/blob/master/pokemon/home.png?raw=true)
 
-Any good game needs a good bad game. Pokemon fans will recongize Team Rocket and their classic theme music.
+Any good game needs a good bad game. Pokemon fans will recognize Team Rocket and their classic theme music.
 
 ![teamrocket](https://github.com/MattRoger/screenshots/blob/master/pokemon/teamrocket.png?raw=true)
+
+### Rules Screen
+This screen shows the the user how to play the game.
+I created the graphic from found elements
+
+![rules](https://github.com/MattRoger/screenshots/blob/master/pokemon/rules.png?raw=true)
 
 ## Installation
 * :trident: Fork it
