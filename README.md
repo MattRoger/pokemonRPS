@@ -26,7 +26,7 @@ MVP. All of the game functions work. Only sized for larger screens
 
 - [ ] Fix tracking score, right now it seems to only be counting computer
 - [ ] Fix issue with startBtn. Maybe issue with B
-- [ x ] add note about ties in rules
+- [x] add note about ties in rules
 - [ ] Make page responsive
 - [ ] loop battle music
 - [ ] have opening music play at end instead of battle music
