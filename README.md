@@ -29,17 +29,28 @@ MVP. All of the game functions work. Only sized for larger screens
 - [x] add note about ties in rules
 - [ ] Make page responsive
 - [ ] loop battle music
-- [ ] have opening music play at end instead of battle music
 
-## Code style
-HTML CSS JavaSript
 
 ## Tech/framework used
-HTML CSS JavaSript JQuerry
+* HTML 
+* CSS 
+* JavaSript 
+* JQuerry
 
 ## Features
 * Music
 * Stats!
+
+## How It Works
+
+### Opening
+This page informs the user there is sound, so they can adjust their speakers accordingly.
+
+![opening](https://github.com/MattRoger/screenshots/blob/master/pokemon/home.png?raw=true)
+
+Any good game needs a good bad game. Pokemon fans will recongize Team Rocket and their classic theme music.
+
+![teamrocket](https://github.com/MattRoger/screenshots/blob/master/pokemon/teamrocket.png?raw=true)
 
 ## Installation
 * :trident: Fork it
