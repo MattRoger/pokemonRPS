@@ -20,7 +20,7 @@ You only have three lives! :heart: :heart: :heart:
 I wanted to build an app that shows off my JQuerry and DOM skills.
 
 ## Build Status
-MVP. All of the game functions work. Only sized for larger screens
+MVP. All of the game functions work. Only sized for larger screens.
 
 ### ToDos
 
@@ -54,18 +54,20 @@ Any good game needs a good bad game. Pokemon fans will recognize Team Rocket and
 
 ### Rules Screen
 This screen shows the the user how to play the game.
-I created the graphic from found elements
+I created the graphic from found elements.
+Players with sound on will hear the Pokemon Gameboy classic theme.
 
 ![rules](https://github.com/MattRoger/screenshots/blob/master/pokemon/rules.png?raw=true)
+
+### Game Play
+During the game, if users have their speakers on, the can listen to Pokemon's classic battle music.
+
+A Demo of how the game works.
+![demo](https://github.com/MattRoger/screenshots/blob/master/pokemon/PokemonFGWGameplay.gif?raw=true)
 
 ## Installation
 * :trident: Fork it
 * :sheep: Clone it
-
-
-## API Reference
-
-## Tests
 
 
 ## Credits / Contact information
