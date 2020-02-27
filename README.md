@@ -1,8 +1,18 @@
-#  **Pokemon FGW** :fire: :leaves: :ocean:.
+#  **Pokemon FGW** :fire: :leaves: :ocean:
 Pokemon FGW is a take on Rock, Paper, Scissors JavaScript Game with a pokemon theme. Fire beats Grass beats Water.
+If the player picks the same Pokemon as the computer ther is a 50% chance the the player will win or lose.
+The Player has 3 Lives each.
 
 [Play The Game!](https://mattroger.github.io/pokemonRPS/)
 
+## How to play
+Click on any Pokemon to make your choice. 
+
+Charmander, orange= Fire :fire:
+
+Bulbasaur, green = Grass :leaves:
+
+Squirtle, blue = Water :ocean:
 
 ## Motivation
 I wanted to build an app that shows off my JQuerry and DOM skills.
@@ -37,8 +47,6 @@ HTML CSS JavaSript JQuerry
 ## API Reference
 
 ## Tests
-
-## How to use?
 
 
 ## Credits / Contact information
